@@ -1,6 +1,6 @@
 = TerminalMarkup
 
-* http://lemurheavy.com
+* http://github.com/yickster/Terminal-Markup
 
 == DESCRIPTION:
 
@@ -11,6 +11,12 @@ Easy coloring/markup for terminal output
   "print this in red".in_red
   "print this on blue".on_blue
   "print this with underline".as_underline
+  
+  class Dummy
+    def to_s; "hey" end
+  end
+  
+  Dummy.new.in_red.on_blue
 
 == REQUIREMENTS:
 
@@ -18,7 +24,7 @@ none
 
 == INSTALL:
 
-sudo gem i terminal_markup
+sudo gem i terminal_markup --source="http://gemcutter.org"
 
 == LICENSE:
 
