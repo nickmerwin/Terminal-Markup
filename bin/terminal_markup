@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
+
+require 'terminal_markup'
+include TerminalMarkup
+puts "\n#{CREDITS}\n\n"
+PREPOSITION_MAP.each do |markup, preposition|
+  markup.each{|name,code| puts eval("\"#{preposition}_#{name}\".#{preposition}_#{name}").escape}
+end
+puts "\n"
